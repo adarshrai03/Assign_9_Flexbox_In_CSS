@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald&family=Tilt+Neon&display=swap" rel="stylesheet">
+    <title>Ticket booking clone</title>
+</head>
+
+<style>
+    *{
+        margin: 0%;
+        padding: 0%;
+    }
+    .main{
+        height: 100vh;
+        width: 50vw;
+        
+    }
+    .logo{
+        display: inline-flex;
+        position: relative;
+        Top: 18.69px;
+        Left: 48.39px;
+    }
+    .logo img{
+        display: inline-flex;
+        
+        Width:70.92px;
+        Height:81.11px;
+        
+        padding: 10px;
+    }
+    .img2{
+        width:90px ;
+    }
+    .nav{
+        width: 321.8px;
+        height: 81.8px;
+        display: inline-flex;
+        position: relative;
+        top: -52px;
+        left: 118px;
+        flex-wrap: wrap;
+        gap: 25px;
+        font-family: 'Montserrat', sans-serif;
+        font-family: 'Oswald', sans-serif;
+        font-family: 'Tilt Neon', sans-serif;
+       
+        
+    }
+    .nav-text{
+        position: relative;
+        left: 72px;
+    }
+    .button{
+        display: inline-flex;
+        position: relative;
+        left: 30px;
+        bottom: 10px;
+        gap: 20px;
+        
+    }
+     
+    .button1{
+        padding: 3px;
+        border-radius: 5px;
+        box-shadow: 0.5px 0.5px 4px rgb(223, 223, 223);
+        background-color: rgb(255, 249, 237);
+        height: 33px;
+        width: 90px;
+        border-radius: 40px;
+    }
+    
+    .button1:hover{
+        background-color: rgb(255, 136, 0);
+        color: white;
+        cursor: pointer;
+    }
+    .head{
+        height: 95px;
+        width: 438px;
+        display: inline-flex;
+        position: absolute;
+        left:61px ;
+        top: 140px;
+        flex-wrap: wrap;
+    }
+    h1{
+        display: inline;
+        width: 438px;
+        color: rgb(26, 0, 26);
+    }
+    .s{
+        color: green;
+        padding: 10px;
+        padding-left: 0px;
+    }
+    .se{
+        color: orange;
+        padding: 10px;
+        padding-left: 0px;
+    }
+    .p{
+        color: purple;
+        padding: 10px;
+        padding-left: 0px;
+    }
+
+    .sub-button{
+        display: inline-flex;
+        position: absolute;
+        width: 538px;
+        height: 33px;
+        top: 250px;
+        left: 61px;
+        gap: 20px;
+    }
+    .sub_b{
+        padding: 5px;
+        width: 156px;
+        height: 33px;
+        border-radius: 5px;
+        background-color: rgb(201, 201, 201);
+        border: .4px solid rgb(225, 225, 225);
+        font-family: 'Montserrat', sans-serif;
+        font-family: 'Oswald', sans-serif;
+        font-family: 'Tilt Neon', sans-serif;
+    }
+    .sub_b:hover{
+        background-color: darkblue;
+        cursor: pointer;
+        color: white;
+    }
+    .train-box1{
+        display: inline-flex;
+        position: absolute;
+        height: 116px;
+        width:  618px;
+        top: 322px;
+        left: 61px;
+        border: 1px solid black;
+        box-sizing: border-box;
+        background-color: rgb(235, 240, 244);
+        border: none;
+        box-shadow: .5px .5px 2px black;
+    }
+    .area11{
+        position: relative;
+        left: 40px;
+        top: 15px;
+    }
+    .area12{
+        top: 15px;
+        position: relative;
+        left: 355px;
+    }
+    .train-box , h2 , p{
+        padding: 3px;
+    }
+
+    .train-box2{
+        display: inline-flex;
+        position: absolute;
+        height: 116px;
+        width:  618px;
+        top: 462px;
+        left: 61px;
+        border: 1px solid black;
+        box-sizing: border-box;
+        background-color: rgb(235, 240, 244);
+        border: none;
+        box-shadow: .5px .5px 2px black;
+    }
+    .area21{
+        position: relative;
+        left: 40px;
+        top: 15px;
+    }
+    .area22{
+        position: relative;
+        left: 160px;
+        top: 15px;
+    }
+    .area23{
+        position: relative;
+        top: 15px;
+        left: 290px;
+    }
+    
+    .search{
+        display: inline-flex;
+        position: relative;
+        top: 460px;
+        left: 61px;
+        background-color: rgb(0, 255, 0);
+        color: rgb(0, 0, 0);
+        border-radius: 5px;
+        font-family: 'Courier New', Courier, monospace;
+        height: 81px;
+        width: 618px;
+        justify-content: center;
+        align-items: center;
+    }
+    .search:hover{
+        background-color: rgb(121, 255, 121);
+        cursor: pointer;
+    }
+
+    .img{
+        display: inline-flex;
+        flex-direction: column;
+        position: absolute;
+        right: 100px;
+        top: 0px;
+        height: 100vh;
+        width: 250px;
+    }
+    .img , img{
+        height: 711px;
+        width: 528px;
+    }
+    
+
+     
+</style>
+<body>
+    <div class="main">
+        <div class="logo">
+            <img class="img1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCmrNqtOVWIufearj9BQEOoLpJaLa5bGfa7Q&usqp=CAU" alt="IRCTC.img">
+            <img class="img2" src="logo.png" alt="railway.img">
+        </div>
+        <div class="nav">
+            <p class="nav-text">Ask Disha</p>
+            <p class="nav-text">Contact us</p>
+            <p class="nav-text">Alert</p>
+        
+        <div class="button">
+            <button  class="button1">Login</button>
+            <button class="button1">Register</button>
+            <button class="button1">Agent Login</button>
+        </div>
+        </div>
+        <div class="head">
+            <h1>Indian Railways</h1> <br>
+            <h2 class="s">Safety </h2>
+            <h2 class="se">Security </h2>
+            <h2 class="p">Punctuality </h2>
+        </div>
+        <div class="sub-button">
+            <button class="sub_b">BOOK Ticket</button>
+            <button class="sub_b">PNR Status</button>
+            <button class="sub_b">Charts / Vacancy</button>
+        </div>
+
+        <div class="train-box1">
+            <div class="area11">
+                <p>From ↓</p>
+                <h2>Bangalore</h2>
+                <p>KSR - Banglore</p>
+            </div>
+            <div class="area12">
+                <p>To ↓</p>
+                <h2>Mumbai</h2>
+                <p>KSD- Mumbai</p>
+            </div>
+        </div>
+        <div class="train-box2">
+            <div class="area21">
+                <p>Date ↓</p>
+                <h2>01 Aug 23</h2>
+                <p>Tuesday</p>
+            </div>
+            <div class="area22">
+                <p>class ↓</p>
+                <h2>3A</h2>
+                <p>AC 3 Tier</p>
+            </div>
+            <div class="area23">
+                <p>Seat Type</p>
+                <h2>TATKAL</h2>
+                <p>AC 3 Tier</p>
+            </div>
+        </div>
+
+        <div class="search">
+            <h2>Search Train →</h2>
+        </div>
+    </div>
+    <div class="img">
+        <img src="https://images.moneycontrol.com/static-mcnews/2023/02/7-budget-representative-image-vande-bharat-770x433.jpg?impolicy=website&width=770&height=431" alt="train.img">
+        <img src="https://w0.peakpx.com/wallpaper/177/744/HD-wallpaper-train-crossing-mountains-lake-scenery.jpg" alt="train.img">
+    </div>
+</body>
+</html>

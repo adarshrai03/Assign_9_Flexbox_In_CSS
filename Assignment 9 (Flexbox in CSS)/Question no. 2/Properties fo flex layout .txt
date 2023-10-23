@@ -1,0 +1,15 @@
+Properties fo flex layout :
+
+1. Justify-content :- The justify-content property aligns flex items along the main axis (horizontal axis for flex-direction: row, vertical axis 		      for flex-direction: column) within a flex container. It controls the spacing between and around the flex items.
+
+2. Align-item :- The align-items property aligns flex items along the cross axis (vertical axis for flex-direction: row, horizontal axis for flex-		 direction: column) within a flex container. It determines how items are aligned in the container.
+
+3. Gap :- If you're looking for a way to create space between items in a Flexbox layout, you can use margin as shown above. Additionally, you can 	  use justify-content and align-items properties to control the spacing and alignment of items within the flex container.
+	  If you're working with a Grid layout, you can use the gap property to define the space between grid items:
+
+4. The flex-direction property in CSS is used within a flex container to define the direction in which flex items are placed within the flex container. It determines the main axis and the cross axis of the flex container.It can taken as value : row , row-reverse , column , column-reverse
+
+5. The flex-wrap property in CSS is used to control whether flex items should wrap or remain on a single line within a flex container. It's particularly useful when there isn't enough space to accommodate all the items on one line.
+nowrap: This is the default value. It specifies that the flex items should not wrap, and will remain on a single line even if they overflow the container.
+wrap: It allows flex items to wrap onto multiple lines if necessary.
+wrap-reverse: It reverses the wrapping order. Flex items wrap onto multiple lines, but in reverse order.
